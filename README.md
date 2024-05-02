@@ -43,7 +43,7 @@
 - **Consumatori:** Sostenere prodotti Made in Italy autentici e avere la certezza della loro provenienza
 
 **Scarica Authentichain oggi stesso e unisciti alla rivoluzione della tracciabilità e della trasparenza!**
-( trovi l'apk nella repo)
+(per l'uso dell'AI collegarsi con VPN in USA dato che Gemini Api deve ancora arrivare in Italia e scaricare e installare l'apk nella repo)
 **#Authentichain #MadeInItaly #Tracciabilità #Sicurezza #AI #Blockchain**
 
 **Tecnologie utilizzate:**
