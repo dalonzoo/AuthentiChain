@@ -1,4 +1,4 @@
-**Authentichain** è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
+**Authentichain** ([qui per l'apk]([www.google.com](https://drive.google.com/file/d/1Y_6SlGWksnB0wGTuLMW66kKnF2K5Fpef/view?usp=sharing))) è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
 
 **Registrare i produttori con AI:**
 
