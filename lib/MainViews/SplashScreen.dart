@@ -1,11 +1,18 @@
 import 'dart:async';
 
+import 'package:AuthtentiChain/MainViews/HomeViewConsumer.dart';
+import 'package:AuthtentiChain/MainViews/HomeViewFiliera.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:learn_link/MainViews/HomeView.dart';
-import 'package:learn_link/login/login_view.dart';
-import 'package:learn_link/icons/my_flutter_app_icons.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../firebase_options.dart';
+import '../login/login_view.dart';
+import '../utils/Usertype.dart';
+import 'HomeView.dart';
 import 'OnBoardingPage.dart';
 
 
@@ -20,47 +27,77 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
 
   bool _isLoggedIn = false;
-
+  Image myImage = Image.asset('assets/icons/logo1.png');
   @override
   void initState() {
     super.initState();
-    _checkLoginStatus();
+    initFirebase();
 
   }
 
-  Future<void> _checkLoginStatus() async {
+  void initFirebase() async{
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    ).whenComplete(() async{
+      checkLoginStatus();
 
-    _isLoggedIn = false;
-    await Future.delayed(const Duration(seconds: 1));
-    if (_isLoggedIn) {
+    });
+
+  }
+
+  void checkLoginStatus() async {
+    final User? user = FirebaseAuth.instance.currentUser;
+    final prefs = await SharedPreferences.getInstance();
+    bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
+
+    if (!seenOnboarding) {
+      print("apro on barding");
+
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomeView()),
+        MaterialPageRoute(builder: (context) => OnboardingPage()),
       );
     } else {
+      if (user != null) {
 
-      final prefs = await SharedPreferences.getInstance();
-      bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
-
-      if (seenOnboarding) {
-        print("apro on barding");
-
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => OnboardingPage()),
-        );
-
-        prefs.setBool('seenOnboarding', true);
-
+        print(user.email);
+        getUserData(FirebaseAuth.instance.currentUser!.uid);
+        // Navigate to the next page or perform other actions
       } else {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => LoginView()),
         );
-
+        print('User is not logged in');
+        // Show the login page or perform other actions
       }
-
     }
+  }
+
+  void getUserData(String userId) async {
+    final userRef = FirebaseDatabase.instance.ref('users/$userId');
+    final event = await userRef.once();
+
+
+    final data = event.snapshot.value as Map<dynamic, dynamic>;
+    UserData user = UserData.fromMap(data);
+    if(user.tipo == 'p'){
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomeView()),
+      );
+    }else if(user.tipo == 'c'){
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomeViewConsumer()),
+      );
+    }else{
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomeViewFiliera()),
+      );
+    }
+
   }
 
   @override
@@ -70,10 +107,10 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.webhook_rounded,
-              size: 150,
-              color: Colors.blue,
+            SizedBox(
+              height: 150,
+              width: 150,
+              child: myImage,
             ),
             const SizedBox(height: 20),
             const CircularProgressIndicator(),
@@ -81,5 +118,8 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       ),
     );
+
   }
 }
+
+

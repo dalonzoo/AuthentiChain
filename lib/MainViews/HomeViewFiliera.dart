@@ -1,4 +1,5 @@
 import 'package:AuthtentiChain/MainViews/MyProducts.dart';
+import 'package:AuthtentiChain/MainViews/ProductLookUpFiliera.dart';
 import 'package:AuthtentiChain/MainViews/ProductRegistration.dart';
 import 'package:AuthtentiChain/MainViews/ProfilePage.dart';
 import 'package:AuthtentiChain/MainViews/TheftReportPage.dart';
@@ -9,18 +10,18 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../utils/Usertype.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+class HomeViewFiliera extends StatefulWidget {
+  const HomeViewFiliera({Key? key}) : super(key: key);
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<HomeViewFiliera> createState() => _HomeViewFilieraState();
 
 
 }
 
 
 
-class _HomeViewState extends State<HomeView> {
+class _HomeViewFilieraState extends State<HomeViewFiliera> {
   int _selectedIndex = 0;
 
   final List<Widget> _pages = [
@@ -107,15 +108,15 @@ class Page1 extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => Myproducts(productId: user.prodotti)),
+                      builder: (context) => ProductLookupFiliera()),
                 );
               },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(Icons.shopping_basket, size: 40.0), // Larger icon
+                  const Icon(Icons.document_scanner, size: 40.0), // Larger icon
                   const SizedBox(height: 10.0),
-                  Text('I Tuoi Prodotti', style: GoogleFonts.openSans()),
+                  Text('Scansiona', style: GoogleFonts.openSans()),
                 ],
               ),
             ),
@@ -130,36 +131,7 @@ class Page1 extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => ProductRegistrationPage()),
-                );
-              },
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(Icons.app_registration, size: 40.0), // Larger icon
-                  const SizedBox(height: 10.0),
-                  Text('Registra', style: GoogleFonts.openSans(),),
-                ],
-              ),
-            ),
-          ),
-          Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            elevation: 4.0,
-            child: InkWell(
-              onTap: () async {
-                final userRef = FirebaseDatabase.instance.ref('users/' + FirebaseAuth.instance.currentUser!.uid);
-                final event = await userRef.once();
-
-
-                final data = event.snapshot.value as Map<dynamic, dynamic>;
-                UserData user = UserData.fromMap(data);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => TheftReportPage(productId: user.prodotti,)),
+                      builder: (context) => TheftReportPage(productId: "")),
                 );
               },
               child: Column(

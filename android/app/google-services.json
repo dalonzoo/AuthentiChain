@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "100080178828",
+    "firebase_url": "https://authentichain-e53e4-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "authentichain-e53e4",
+    "storage_bucket": "authentichain-e53e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100080178828:android:66d89e47b2ca9059fbcda9",
+        "android_client_info": {
+          "package_name": "com.authenti.app.authentichain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQSz4N2WOSh-FqB0AS_PikhT7rWGAF8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100080178828:android:a42f39bc4b90d7a6fbcda9",
+        "android_client_info": {
+          "package_name": "com.authentichain.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQSz4N2WOSh-FqB0AS_PikhT7rWGAF8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

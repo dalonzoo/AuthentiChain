@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../login/login_view.dart';
 import 'HomeView.dart';
 
 class OnboardingPage extends StatefulWidget {
@@ -26,10 +28,12 @@ class _OnboardingPageState extends State<OnboardingPage> {
     });
   }
 
-  void _skipToHome() {
+  void _skipToLogin() async{
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setBool('seenOnboarding', true);
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => HomeView()), // SecondPage è la pagina di destinazione
+      MaterialPageRoute(builder: (context) => LoginView()), // SecondPage è la pagina di destinazione
     );
   }
 @override
@@ -46,7 +50,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
         title: Text('Onboarding'),
         actions: [
           TextButton(
-            onPressed: _skipToHome,
+            onPressed: _skipToLogin,
             child: Text('Salta'),
           ),
         ],
