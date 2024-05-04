@@ -1,3 +1,5 @@
+![alt text](https://github.com/dalonzoo/AuthentiChain/blob/master/assets/icons/logo1.png?size=30)
+
 **Authentichain** ([qui per l'apk](https://drive.google.com/file/d/1Y_6SlGWksnB0wGTuLMW66kKnF2K5Fpef/view?usp=sharing)) è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
 
 **Registrare i produttori con AI:**
