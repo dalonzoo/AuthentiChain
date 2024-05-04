@@ -28,6 +28,11 @@
 
 - Contribuisci a migliorare la qualità dei prodotti Made in Italy fornendo feedback ai produttori.
 
+**Che tipo di blockchain è usata?Come è stata implementata?**
+
+- Questa applicazione simula una blockchain ibrida per la registrazione di prodotti utilizzando Firebase Realtime Database. L'app consente agli utenti di registrare nuovi prodotti, visualizzare i prodotti registrati dato un id univoco presente nel database. I dati dei prodotti vengono archiviati in modo decentralizzato nel database Firebase, garantendo la sicurezza e l'immutabilità dei dati.
+L'accesso alla scrittura nel database è riservata a soli autorizzati con determinati ruoli (f.e. consumatore), la lettura di determinati documenti (f.e. reports) è resa pubblica per il tracciamento tempestivo delle forza dell'ordine grazie anche al sistema di sicurezza AI based presente nell'App.
+
 **Funzionalità aggiuntive:**
 
 - Scansione di codici QR per accedere a informazioni dettagliate sui prodotti
