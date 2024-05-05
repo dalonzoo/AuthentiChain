@@ -49,7 +49,7 @@ L'accesso alla scrittura nel database è riservata a soli autorizzati con determ
 - **Rivenditori:** Proteggersi dai prodotti contraffatti e offrire ai clienti un'esperienza di acquisto sicura
 - **Consumatori:** Sostenere prodotti Made in Italy autentici e avere la certezza della loro provenienza
 
-#Scarica-Authentichain-oggi-stesso-e-unisciti-alla-rivoluzione-della-tracciabilità-e-della-trasparenza!
+Scarica-Authentichain-oggi-stesso-e-unisciti-alla-rivoluzione-della-tracciabilità-e-della-trasparenza!
 **Scarica Authentichain oggi stesso e unisciti alla rivoluzione della tracciabilità e della trasparenza!**
 (per l'uso dell'AI collegarsi con VPN in USA dato che Gemini Api deve ancora arrivare in Italia e scaricare e installare [l'apk](https://drive.google.com/file/d/1Y_6SlGWksnB0wGTuLMW66kKnF2K5Fpef/view?usp=sharing))
 **#Authentichain #MadeInItaly #Tracciabilità #Sicurezza #AI #Blockchain**
