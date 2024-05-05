@@ -1,6 +1,6 @@
 <img src="https://github.com/dalonzoo/AuthentiChain/blob/master/assets/icons/logo1.png?size=30" alt="drawing" width="300" style="display: block; margin-left: auto; margin-right: auto;"/>
 
-**Authentichain** ([scarica qui](##Scarica-Authentichain-oggi-stesso-e-unisciti-alla-rivoluzione-della-tracciabilità-e-della-trasparenza!)) è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
+**Authentichain** ([scarica qui](Scarica-Authentichain-oggi-stesso-e-unisciti-alla-rivoluzione-della-tracciabilità-e-della-trasparenza!)) è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
 
 **Registrare i produttori con AI:**
 
@@ -49,7 +49,7 @@ L'accesso alla scrittura nel database è riservata a soli autorizzati con determ
 - **Rivenditori:** Proteggersi dai prodotti contraffatti e offrire ai clienti un'esperienza di acquisto sicura
 - **Consumatori:** Sostenere prodotti Made in Italy autentici e avere la certezza della loro provenienza
 
-## Scarica-Authentichain-oggi-stesso-e-unisciti-alla-rivoluzione-della-tracciabilità-e-della-trasparenza!
+## Scarica Authentichain oggi stesso e unisciti alla rivoluzione della tracciabilità e della trasparenza!
 **Scarica Authentichain oggi stesso e unisciti alla rivoluzione della tracciabilità e della trasparenza!**
 (per l'uso dell'AI collegarsi con VPN in USA dato che Gemini Api deve ancora arrivare in Italia e scaricare e installare [l'apk](https://drive.google.com/file/d/1Y_6SlGWksnB0wGTuLMW66kKnF2K5Fpef/view?usp=sharing))
 **#Authentichain #MadeInItaly #Tracciabilità #Sicurezza #AI #Blockchain**
