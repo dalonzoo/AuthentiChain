@@ -1,6 +1,8 @@
 <img src="https://github.com/dalonzoo/AuthentiChain/blob/master/assets/icons/logo1.png?size=30" alt="drawing" width="300" style="display: block; margin-left: auto; margin-right: auto;"/>
 
-**Authentichain** ([scarica qui](download-authentichain)) è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
+## Authentichain
+
+**[Scaricala qui](download-authentichain)** **Authentichain** è un'app rivoluzionaria che utilizza l'intelligenza artificiale e la blockchain per garantire la tracciabilità e l'autenticità dei prodotti Made in Italy. Con Authentichain, puoi:
 
 **Registrare i produttori con AI:**
 
@@ -30,10 +32,10 @@
 
 - Contribuisci a migliorare la qualità dei prodotti Made in Italy fornendo feedback ai produttori.
 
-**Che tipo di blockchain è usata?Come è stata implementata?**
+**Che tipo di blockchain è usata? Come è stata implementata?**
 
 - Questa applicazione simula una blockchain ibrida per la registrazione di prodotti utilizzando Firebase Realtime Database. L'app consente agli utenti di registrare nuovi prodotti, visualizzare i prodotti registrati dato un id univoco presente nel database. I dati dei prodotti vengono archiviati in modo decentralizzato nel database Firebase, garantendo la sicurezza e l'immutabilità dei dati.
-L'accesso alla scrittura nel database è riservata a soli autorizzati con determinati ruoli (f.e. consumatore), la lettura di determinati documenti (f.e. reports) è resa pubblica per il tracciamento tempestivo delle forza dell'ordine grazie anche al sistema di sicurezza AI based presente nell'App.
+L'accesso alla scrittura nel database è riservata a soli autorizzati con determinati ruoli (f.e. consumatore), la lettura di determinati documenti (f.e. reports) è resa pubblica per il tracciamento tempestivo delle forze dell'ordine grazie anche al sistema di sicurezza AI based presente nell'App.
 
 **Funzionalità aggiuntive:**
 
@@ -43,37 +45,39 @@ L'accesso alla scrittura nel database è riservata a soli autorizzati con determ
 - Gestione di più account (produttore, rivenditore, consumatore)
 - Interfaccia intuitiva e facile da usare
 
-**Authentichain** è la soluzione ideale per:
+**Authentichain è la soluzione ideale per:**
 
 - **Produttori:** Garantire l'autenticità dei propri prodotti e aumentare la fiducia dei consumatori
 - **Rivenditori:** Proteggersi dai prodotti contraffatti e offrire ai clienti un'esperienza di acquisto sicura
 - **Consumatori:** Sostenere prodotti Made in Italy autentici e avere la certezza della loro provenienza
 
 ## Download Authentichain
+
 **Scarica Authentichain oggi stesso e unisciti alla rivoluzione della tracciabilità e della trasparenza!**
 (per l'uso dell'AI collegarsi con VPN in USA dato che Gemini Api deve ancora arrivare in Italia e scaricare e installare [l'apk](https://drive.google.com/file/d/1Y_6SlGWksnB0wGTuLMW66kKnF2K5Fpef/view?usp=sharing))
+
 **#Authentichain #MadeInItaly #Tracciabilità #Sicurezza #AI #Blockchain**
 
 **Tecnologie utilizzate:**
 
-- textfield\_tags: ^3.0.1
-- flutter\_google\_places: ^0.3.0
-- google\_maps\_webservice: ^0.0.16
-- shared\_preferences: ^2.2.3
-- google\_ml\_kit: ^0.11.0
-- google\_fonts: ^4.0.4
-- image\_picker: ^1.1.0
-- flutter\_gemini: ^2.0.3
-- flutter\_svg: ^2.0.0
-- speech\_to\_text: ^6.6.1
-- animate\_do: ^3.3.4
-- flutter\_colorpicker: ^1.0.3
+- textfield_tags: ^3.0.1
+- flutter_google_places: ^0.3.0
+- google_maps_webservice: ^0.0.16
+- shared_preferences: ^2.2.3
+- google_ml_kit: ^0.11.0
+- google_fonts: ^4.0.4
+- image_picker: ^1.1.0
+- flutter_gemini: ^2.0.3
+- flutter_svg: ^2.0.0
+- speech_to_text: ^6.6.1
+- animate_do: ^3.3.4
+- flutter_colorpicker: ^1.0.3
 - intl: ^0.19.0
-- firebase\_core: ^2.30.1
-- firebase\_auth: 4.19.4
-- firebase\_database: ^10.5.4
-- flutter\_markdown: ^0.7.1
-- cloud\_firestore: ^4.17.2
+- firebase_core: ^2.30.1
+- firebase_auth: 4.19.4
+- firebase_database: ^10.5.4
+- flutter_markdown: ^0.7.1
+- cloud_firestore: ^4.17.2
 - sqflite: ^2.2.7
 - qr\_flutter: ^4.1.0
 - flutter\_neumorphic\_plus: ^3.3.0
